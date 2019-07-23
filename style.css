@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+header {
+    box-sizing: border-box;
+}
+
+.levelsBtns {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(#345, #678);
+}
+.levelsBtns button {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+    border-radius: 25%;
+    outline: none;
+
+}
+.levelsBtns button:hover {
+    color: white;
+    background-color: rgb(171, 189, 16);
+
+}
+main {
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+main > div {
+    flex: 1;
+}
+
+.player1, .player2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.player1 > *, .player2 > * {
+    width: 50%;
+    text-align: center;
+}
+.player1 button, .player2 button {
+    outline: none;
+    border: none;
+    padding: 10px 10px;
+     background-color: rgb(243, 14, 193);
+     font-size: 20px;
+     font-weight: bold;
+     color: white;
+     box-shadow: 0 6px rgb(241, 162, 15);
+     border-radius: 20px;
+     position: relative;
+     cursor: pointer;
+}
+.player1 button:focus, .player2 button:focus {
+    top: 2px;
+    box-shadow: 0 4px rgb(255, 166, 0);
+}
+.player1 button:active, .player2 button:active {
+    box-shadow: none;
+    top: 4px;
+}
+.active {
+    color: white;
+    background-color: rgb(171, 189, 16);
+}
+.display-none {
+    display: none;
+}
+img {
+    width: 30px;
+}
+@media (max-width: 425px) {
+    .levelsBtns button {
+    font-size: 0.5em;
+
+    }
+    .player1 {
+        height: 60vh;
+    }
+} 
+
+footer {
+    margin-top: 39px;
+}
